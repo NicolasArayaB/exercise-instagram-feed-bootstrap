@@ -10,25 +10,45 @@
     <script src="https://use.fontawesome.com/d9229a8f5f.js"></script>
 </head>
 <body>
+    <div class="modal" id="my-modal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <textarea name="new-post" id="comment" cols="60" rows="2"></textarea>
+              <div class="btn btn-outline-secondary btn-sm"><i class="bi bi-camera-fill"></i></div>
+              <div class="btn btn-outline-secondary btn-sm"><i class="bi bi-geo-alt-fill"></i></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="container-fluid">
-        <div class="row bg-light">
+        <div class="row bg-light fixed-top">
             <div class="col-1">
                 <i class="bi bi-instagram text-secondary fs-2 m-5"></i>
             </div>
             <div class="col-1 ps-0">
-                <img class="img-fluid" src="https://logos-marcas.com/wp-content/uploads/2020/04/Instagram-Logo.png" alt="ig">                
+                <img class="img-fluid" src="https://logos-marcas.com/wp-content/uploads/2020/04/Instagram-Logo.png" alt="instagram">                
             </div>
             <div class="col-6"></div>
-            <div class="col-3">
-                <button type="button" class="btn btn-lg btn-success m-2">Create a new Post</button>
+            <div class="col-2 p-0 d-grid gap-2 justify-content-end">
+                <button type="button" class="btn btn-lg btn-success m-2"  data-bs-toggle="modal" data-bs-target="#my-modal">Create a new Post</button>
             </div>
-            <div class="col-1">
+            <div class="col-2 p-0">
                 <nav class="navbar navbar-white bg-transparent">
-                  <div class="container-fluid">
+                  <div class="p-0">
                     <a class="navbar-brand" href="#"></a>
-                    <i class="bi bi-gear-fill text-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></i>
+                    <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#content" aria-controls="content" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-gear-fill text-secondary p-0" ></i>
+                    <i class="bi bi-caret-down-fill text-secondary fs-6 p-0"></i>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  </div>
+                </nav>
+            </div>
+                    <div class="collapse navbar-collapse" id="content">
                       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                           <a class="nav-link active" href="#">Action</a>
@@ -45,15 +65,15 @@
                         </li>
                       </ul>
                     </div>
-                  </div>
-                </nav>
-            </div>
+                  
+                
+            
         </div>
         <div class="row bg-white">
             <div class="col-12 d-flex justify-content-center">
                 <div class="btn-toolbar mb-3 m-3" role="toolbar" aria-label="Toolbar with button groups">
                     <div class="btn-group me-2" role="group" aria-label="First group">
-                        <button type="button" class="btn btn-outline-secondary"><div class="my-button"></div></button>
+                        <button type="button" class="btn btn-outline-secondary"><i class="bi bi-grid-3x3-gap"></i></div></button>
                         <button type="button" class="btn btn-outline-secondary"><div class="my-button"></div></button>
                     </div>
                 </div>
