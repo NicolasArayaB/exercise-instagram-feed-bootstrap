@@ -25,8 +25,8 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <div class="row bg-light fixed">
+  <div class="container-fluid"></div>
+    <div class="row bg-light fixed-top">
       <div class="col-1">
           <i class="bi bi-instagram text-secondary fs-2 m-5"></i>
       </div>
@@ -56,15 +56,13 @@
     </div>
 		<div class="row bg-white">
       <div class="col-12 d-flex justify-content-center">
-        <div class="btn-toolbar mb-3" role="toolbar" aria-label="Swich display view">
-          <div class="btn-group mt-3" role="group" aria-label="group" role="group">
-            <a type="button" class="btn btn-outline-secondary p-2 border-0 active" data-bs-toggle="button" data-toggle="collapse" data-target=".photo" aria-expanded="false" aria-controls="header likes description bottom">
-              <i class="bi bi-grid-3x3-gap-fill"></i>
-						</a>
-            <button type="button" class="btn btn-outline-secondary p-2 border-0" data-bs-toggle="button" data-toggle="collapse" data-target=".photo" aria-expanded="true" aria-controls="header likes description bottom">
-              <i class="bi bi-grid-3x3-gap-fill"></i>
-            </button>
-          </div>
+        <div class="list-group list-group-horizontal py-1" id="list-tab">
+          <a class="list-group-item-secondary list-group-item-action p-2 border-0 active" id="list-grid-list" data-toggle="list" href="index.html" role="tab" aria-controls="grid">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+					</a>
+          <a class="list-group-item-secondary list-group-item-action p-2 border-0" id="list-feed-list" data-toggle="list" href="feed-display.html" role="tab" aria-controls="feed">
+            <i class="bi bi-grid-3x3-gap-fill"></i>
+					</a>
         </div>
       </div>
 		</div>
@@ -72,35 +70,35 @@
 		<div class="container">
 			<div class="row align-items-center table">
 				<div class="col-4 cell p-1">
-					<img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1-768x400.jpg" class="prueba" alt="puppy">
+					<img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1-768x400.jpg" class="grid-view" alt="puppy">
 				</div>
 				<div class="col-4 cell p-1">
-					<img src="https://www.infobae.com/new-resizer/P_-MI7VdBPqHty_h3nNC7PIcgKc=/768x432/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/07/25115302/Bugs-Bunny.jpg" class="prueba" alt="Bugs Bunny">
+					<img src="https://www.infobae.com/new-resizer/P_-MI7VdBPqHty_h3nNC7PIcgKc=/768x432/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/07/25115302/Bugs-Bunny.jpg" class="grid-view" alt="Bugs Bunny">
 				</div>
 				<div class="col-4 cell p-1">
-					<img src="https://www.thewholesomedish.com/wp-content/uploads/2020/08/The-Best-Classic-Spaghetti-1200-768x768.jpg" class="prueba" alt="html css js logo bootstrap">
-				</div>
-			</div>
-			<div class="row align-items-center table">
-				<div class="col-4 cell p-1">
-					<img src="https://www.tom-archer.com/wp-content/uploads/2018/06/milford-sound-night-fine-art-photography-new-zealand.jpg" class="prueba" alt="landscape">
-				</div>
-				<div class="col-4 cell p-1">
-					<img src="http://iso.500px.com/wp-content/uploads/2014/07/paint-sunset.jpg" class="prueba" alt="landscape">
-				</div>
-				<div class="col-4 cell p-1">
-					<img src="https://4.bp.blogspot.com/-KGsscyjMV4s/TxOR7lAQ1nI/AAAAAAAAAjc/zmEtJWwjnkY/s1600/388606_10150527814878360_290539813359_8674295_859636572_n.jpeg" class="prueba" alt="joke">
+					<img src="https://www.thewholesomedish.com/wp-content/uploads/2020/08/The-Best-Classic-Spaghetti-1200-768x768.jpg" class="grid-view" alt="spaghetti">
 				</div>
 			</div>
 			<div class="row align-items-center table">
 				<div class="col-4 cell p-1">
-					<img src="https://www.analitica.com/wp-content/uploads/2016/10/4Geeks-Academy.jpg" class="prueba" alt="4Geeks logo">
+					<img src="https://www.tom-archer.com/wp-content/uploads/2018/06/milford-sound-night-fine-art-photography-new-zealand.jpg" class="grid-view" alt="landscape">
 				</div>
 				<div class="col-4 cell p-1">
-					<img src="http://www.butter-cake.com/wp-content/uploads/2016/05/ruby_and_rails-768x545.jpg" class="prueba" alt="ruby on rails">
+					<img src="http://iso.500px.com/wp-content/uploads/2014/07/paint-sunset.jpg" class="grid-view" alt="landscape">
 				</div>
 				<div class="col-4 cell p-1">
-					<img src="https://sloboda-studio.com/wp-content/uploads/2019/09/Screenshot-2019-09-03T150113.080.png" class="prueba" alt="ruby vs python">
+					<img src="https://4.bp.blogspot.com/-KGsscyjMV4s/TxOR7lAQ1nI/AAAAAAAAAjc/zmEtJWwjnkY/s1600/388606_10150527814878360_290539813359_8674295_859636572_n.jpeg" class="grid-view" alt="joke">
+				</div>
+			</div>
+			<div class="row align-items-center table">
+				<div class="col-4 cell p-1">
+					<img src="https://www.analitica.com/wp-content/uploads/2016/10/4Geeks-Academy.jpg" class="grid-view" alt="4Geeks logo">
+				</div>
+				<div class="col-4 cell p-1">
+					<img src="http://www.butter-cake.com/wp-content/uploads/2016/05/ruby_and_rails-768x545.jpg" class="grid-view" alt="ruby on rails">
+				</div>
+				<div class="col-4 cell p-1">
+					<img src="https://sloboda-studio.com/wp-content/uploads/2019/09/Screenshot-2019-09-03T150113.080.png" class="grid-view" alt="ruby vs python">
 				</div>
 			</div>
 		</div>

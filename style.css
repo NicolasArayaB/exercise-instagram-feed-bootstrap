@@ -1,5 +1,5 @@
-body #feed {
-    background-color: #c9caca;
+#feed {
+    background-color: #c7cccc;
 }
 
 .dot {
@@ -32,7 +32,11 @@ body #feed {
     width: 300px;
 }
 
-.prueba {
+.grid-view {
     height: 100%;
     width: 100%;
+}
+
+.container-fluid {
+    margin-top: 65px;
 }
