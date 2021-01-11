@@ -1,4 +1,4 @@
-body {
+body #feed {
     background-color: #c9caca;
 }
 
@@ -10,4 +10,29 @@ body {
     border-radius: 50%;
     background-color: rgb(99, 98, 98);
     position: relative;
+}
+
+.btn:focus {
+    
+    box-shadow: none;
+}
+
+.table {
+    display: table;
+    margin: 0px;
+}
+
+.table [class*="col-"] {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.cell {
+    height: 300px;
+    width: 300px;
+}
+
+.prueba {
+    height: 100%;
+    width: 100%;
 }

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap IG photo feed</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://use.fontawesome.com/d9229a8f5f.js"></script>
+</head>
+<body id="feed">
+  <div class="modal" id="my-modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <textarea name="new-post" id="comment" cols="60" rows="2"></textarea>
+          <div class="btn btn-outline-secondary btn-sm"><i class="bi bi-camera-fill"></i></div>
+          <div class="btn btn-outline-secondary btn-sm"><i class="bi bi-geo-alt-fill"></i></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-success">Publish</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+      <div class="row bg-light">
+          <div class="col-1">
+              <i class="bi bi-instagram text-secondary fs-2 m-5"></i>
+          </div>
+          <div class="col-1 ps-0">
+              <img class="img-fluid " src="https://logos-marcas.com/wp-content/uploads/2020/04/Instagram-Logo.png" alt="instagram">                
+          </div>
+          <div class="col-6"></div>
+          <div class="col-2 p-0 d-grid gap-2 justify-content-end">
+              <button type="button" class="btn btn-lg btn-success m-2"  data-bs-toggle="modal" data-bs-target="#my-modal">Create a new Post</button>
+          </div>
+          <div class="col-2 p-0">
+              <nav class="navbar navbar-white bg-transparent">
+                <div class="p-0">
+                  <a class="btn dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                      <i class="bi bi-gear-fill text-secondary p-0" ></i>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Log out</a></li>
+                  </ul>
+                </div>
+              </nav>
+          </div>            
+      </div>
+      <div class="row bg-white">
+          <div class="col-12 d-flex justify-content-center">
+              <div class="btn-toolbar mb-3" role="toolbar" aria-label="Swich display view">
+                  <div class="btn-group mt-3" role="group" aria-label="group" role="group">
+                      <button type="button" class="btn btn-outline-secondary p-2 border-0 active" data-bs-toggle="button" data-toggle="collapse" data-target=".photo" aria-expanded="false" aria-controls="header likes description bottom">
+                          <i class="bi bi-grid-3x3-gap-fill"></i>
+                      </button>
+                      <button type="button" class="btn btn-outline-secondary p-2 border-0" data-bs-toggle="button" data-toggle="collapse" data-target=".photo" aria-expanded="true" aria-controls="header likes description bottom">
+                          <i class="bi bi-grid-3x3-gap-fill"></i>
+                      </button>
+                  </div>
+              </div>
+          </div>
+			</div>
+		</div>
+		<div class="container">
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1 justify-content-center">
+                          <img src="https://d17fnq9dkz9hgj.cloudfront.net/uploads/2020/04/shelter-dog-cropped-1-768x400.jpg" class="img-fluid m-0" alt="puppy">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1 justify-content-center">
+                          <img src="https://www.infobae.com/new-resizer/P_-MI7VdBPqHty_h3nNC7PIcgKc=/768x432/filters:format(jpg):quality(85)/s3.amazonaws.com/arc-wordpress-client-uploads/infobae-wp/wp-content/uploads/2019/07/25115302/Bugs-Bunny.jpg" class="img-fluid m-0" alt="Bugs Bunny">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1 justify-content-center">
+                          <img src="https://jml.neocities.org/html5-css3-js.png" class="img-fluid m-0" alt="html css js logo">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="https://www.tom-archer.com/wp-content/uploads/2018/06/milford-sound-night-fine-art-photography-new-zealand.jpg" class="img-fluid m-0" alt="landscape">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="http://iso.500px.com/wp-content/uploads/2014/07/paint-sunset.jpg" class="img-fluid m-0" alt="landscape">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="https://4.bp.blogspot.com/-KGsscyjMV4s/TxOR7lAQ1nI/AAAAAAAAAjc/zmEtJWwjnkY/s1600/388606_10150527814878360_290539813359_8674295_859636572_n.jpeg" class="img-fluid mx-auto d-block" alt="joke">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="https://www.analitica.com/wp-content/uploads/2016/10/4Geeks-Academy.jpg" class="img-fluid m-0" alt="4Geeks' logo">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="http://www.butter-cake.com/wp-content/uploads/2016/05/ruby_and_rails-768x545.jpg" class="img-fluid m-0" alt="ruby on rails">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-5 m-auto mt-3">
+              <div class="container bg-white p-2">
+                  <div class="row photo collapse" id="header">
+                      <div class="col-3"><h6>My first photo</h6></div>
+                      <div class="col-7"></div>
+                      <div class="col-1 ms-4"><p class="text-secondary">12/14</p></div>
+                  </div>
+                  <div class="row bs-gutter-0">
+                      <div class="col p-1">
+                          <img src="https://sloboda-studio.com/wp-content/uploads/2019/09/Screenshot-2019-09-03T150113.080.png" class="img-fluid m-0" alt="ruby vs python">
+                      </div>
+                  </div>
+                  <div class="row photo collapse" id="likes">
+                      <div class="col"><b>Likes</b></div>
+                  </div>
+                  <div class="row photo collapse" id="description">
+                      <div class="col"><p>This is my first photo in this multy line comment for testing purposes. I'm learning to code with breathcode</p></div>
+                  </div>
+                  <div class="row bs-gutter-0 photo collapse" id="bottom">
+                      <div class="col-1 ms-3 mt-2 p-0"><i class="bi bi-suit-heart"></i></div>
+                      <div class="col-8 p-0"><input type="text" id="inputPassword5" class="form-control border-0" aria-describedby="passwordHelpBlock" placeholder="Comments..."></div>
+                      <div class="col-2 p-0 ps-4 ms-4">
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                          <div class="dot"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
